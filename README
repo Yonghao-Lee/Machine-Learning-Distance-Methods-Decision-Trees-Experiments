@@ -2,7 +2,7 @@
 
 A comprehensive implementation and analysis of K-Nearest Neighbors (KNN) and Decision Tree algorithms for geographic classification, using US state prediction from longitude/latitude coordinates.
 
-## 📋 Overview
+## Overview
 
 This project explores various machine learning algorithms for classifying geographic locations (US states) based on longitude and latitude coordinates. The implementation includes:
 
@@ -12,14 +12,14 @@ This project explores various machine learning algorithms for classifying geogra
 - **XGBoost** gradient boosting
 - **Anomaly Detection** using distance-based methods
 
-## 🎯 Key Findings
+## Key Findings
 
 - **KNN Performance**: Achieved 96.8% accuracy with k=1 and L2 metric; performance degrades significantly as k increases
 - **Decision Trees**: Best model (Depth=20, Leaves=1000) achieved 97.74% test accuracy
 - **Random Forests**: 300 trees with Depth=6 achieved 80.46% accuracy
 - **XGBoost**: Achieved 96.50% accuracy, demonstrating the power of boosting over bagging
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -28,14 +28,14 @@ This project explores various machine learning algorithms for classifying geogra
 ├── run_knn_experiements.py     # KNN hyperparameter tuning
 ├── anomaly_detection.py        # Distance-based anomaly detection
 ├── visualize_tree.py           # Decision tree visualization
-├── visulaize_knn.py           # KNN decision boundary visualization
+├── visulaize_knn.py            # KNN decision boundary visualization
 ├── run_random_forests.py       # Random forest experiments
 ├── xgboost_experiments.py      # XGBoost experiments
 ├── helpers.py                  # Utility functions for visualization
-└── ex2.pdf                     # Detailed analysis report
+└── report.pdf                  # Detailed analysis report
 ```
 
-## 🔧 Requirements
+## Requirements
 
 ```bash
 numpy
@@ -46,7 +46,7 @@ faiss-cpu  # or faiss-gpu for GPU acceleration
 xgboost
 ```
 
-## 📦 Installation
+## Installation
 
 1. Clone the repository:
 ```bash
@@ -65,7 +65,7 @@ pip install numpy pandas matplotlib scikit-learn faiss-cpu xgboost
    - `validation.csv`
    - `AD_test.csv`
 
-## 🚀 Usage
+## Usage
 
 ### K-Nearest Neighbors Experiments
 Run comprehensive KNN analysis with different k values and distance metrics:
@@ -109,7 +109,7 @@ Run XGBoost experiments:
 python xgboost_experiments.py
 ```
 
-## 📊 Results Summary
+## Results Summary
 
 ### KNN Performance (Test Accuracy)
 
@@ -152,7 +152,7 @@ python xgboost_experiments.py
 - **Random Forests** (Bagging): Reduces variance but cannot overcome high bias from shallow trees
 - **XGBoost** (Boosting): Sequentially corrects errors, reducing both bias and variance
 
-## 🎨 Visualizations
+## Visualizations
 
 The project generates several visualizations including:
 - KNN decision boundaries with different k values and metrics
@@ -160,7 +160,7 @@ The project generates several visualizations including:
 - Random Forest and XGBoost classification maps
 - Anomaly detection scatter plots
 
-## 📖 Dataset
+## Dataset
 
 The project uses geographic data with longitude and latitude coordinates mapped to US states:
 - **Training set**: Large dataset of US city coordinates with state labels
